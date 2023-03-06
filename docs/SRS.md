@@ -166,6 +166,6 @@ Trekster - простий та зручний додаток для веденн
 ## Use Case Діаграма
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/use%20case.jpg" alt="Use case"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/use_case.jpg" alt="Use case"/>
 </p>
 
