@@ -41,7 +41,7 @@ Trekster - простий та зручний додаток для веденн
 #### 1. Головна сторінка
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/main.jpg" alt="Головна"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/main.jpg" alt="Головна"/>
 </p>
 
 Стартове вікно, що відкривається при запуску програми.  
@@ -52,13 +52,13 @@ Trekster - простий та зручний додаток для веденн
 Користувач обирає витрату чи дохід (select box), рахунок, з якого, чи, на який, відбулась транзакція (dropdown list), категорію транзакції (dropdown list) та суму (input) у новому вікні:
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/add%20trans.jpg" alt="Додавання транзакції"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/add%20trans.jpg" alt="Додавання транзакції"/>
 </p>
 
 #### 2. Рахунки
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/accounts.jpg" alt="Рахунки"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/accounts.jpg" alt="Рахунки"/>
 </p>
 
 Вікно, що відкривається при переході в пункт меню Рахунки.  
@@ -68,13 +68,13 @@ Trekster - простий та зручний додаток для веденн
 Користувач у новому вікні вводить назву рахунку (input), обирає валюти (checkbox) та вводить суми (input). Внизу вікна знаходиться кнопка зберегти, при натиску на яку зберігається новий рахунок :
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/add%20account.jpg" alt="Додавання рахунку"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/add%20account.jpg" alt="Додавання рахунку"/>
 </p>
 
 #### 3. Історія
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/history.jpg" alt="Історія"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/history.jpg" alt="Історія"/>
 </p>
 
 Вікно, що відкривається при переході в пункт меню Історія.  
@@ -84,7 +84,7 @@ Trekster - простий та зручний додаток для веденн
 Кожен блок з транзакцією також містить у правій частині кнопку Редагувати, яка відкриває нове вікно для редагування даних про транзакцію:
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/edit%20trans%201.jpg" alt="Редагування транзакції"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/edit%20trans%201.jpg" alt="Редагування транзакції"/>
 </p>
 
 Користувач має змогу змінити рахунок (dropdown list), категорію (dropdown list) та суму (input) і зберегти або видалити транзакцію, натиснувши на відповідні кнопки внизу вікна.
@@ -92,7 +92,7 @@ Trekster - простий та зручний додаток для веденн
 #### 4. Доходи  
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/profit.jpg" alt="Доходи"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/profit.jpg" alt="Доходи"/>
 </p>
 
 Вікно, що відкривається при переході в пункт меню Доходи.  
@@ -103,7 +103,7 @@ Trekster - простий та зручний додаток для веденн
 #### 5. Витрати  
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/expense.jpg" alt="Витрати"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/expense.jpg" alt="Витрати"/>
 </p>
 
 Вікно, що відкривається при переході в пункт меню Витрати.  
@@ -114,7 +114,7 @@ Trekster - простий та зручний додаток для веденн
 #### 6. Налаштування  
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/settings%20main.jpg" alt="Налаштування"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/settings%20main.jpg" alt="Налаштування"/>
 </p>
 
 Вікно, що відкривається при переході в пункт меню Налаштування.  
@@ -124,7 +124,7 @@ Trekster - простий та зручний додаток для веденн
 #### 7. Налаштування рахунків   
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/settings%20acc.jpg" alt="Налаштування рахунків"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/settings%20acc.jpg" alt="Налаштування рахунків"/>
 </p>
 
 Вікно, що відкривається при переході в пункт Рахунки вікна Налаштування.  
@@ -132,7 +132,7 @@ Trekster - простий та зручний додаток для веденн
 На цій сторінці відображаються послідовно блоки з назвою рахунків, у правій частині вони містять кнопку Редагувати, яка відкриває нове вікно і дає змогу редагувати дані про рахунок:
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/edit%20acc.jpg" alt="Налаштування рахунків 1"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/edit%20acc.jpg" alt="Налаштування рахунків 1"/>
 </p>
 
 Користувач має можливість змінити назву рахунку (input) та баланс.  
@@ -141,7 +141,7 @@ Trekster - простий та зручний додаток для веденн
 #### 8. Налаштування категорій   
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/settings%20cat.jpg" alt="Налаштування категорій"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/settings%20cat.jpg" alt="Налаштування категорій"/>
 </p>
 
 Вікно, що відкривається при переході в пункт Категорії вікна Налаштування.  
@@ -149,7 +149,7 @@ Trekster - простий та зручний додаток для веденн
 На цій сторінці відображаються послідовно блоки з назвою категоірй, у правій частині вони містять кнопку Редагувати, яка відкриває нове вікно і дає змогу редагувати дані про категорію:
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/settings%20cat%201.jpg" alt="Налаштування категорій 1"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/settings%20cat%201.jpg" alt="Налаштування категорій 1"/>
 </p>
 
 Користувач має можливість змінити назву категорії (input).  
@@ -158,7 +158,7 @@ Trekster - простий та зручний додаток для веденн
 Також внизу основного вікна є кнопка додати категорію, яка дає користувача можливість додати категорію у новому вікні:
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/add%20cat.jpg" alt="Додавання категорій 1"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/add%20cat.jpg" alt="Додавання категорій 1"/>
 </p>
 
 Користувач вводить назву категорії і зберігає або скасовує дію.
@@ -166,6 +166,6 @@ Trekster - простий та зручний додаток для веденн
 ## Use Case Діаграма
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/use%20case.jpg" alt="Use case"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/use%20case.jpg" alt="Use case"/>
 </p>
 
