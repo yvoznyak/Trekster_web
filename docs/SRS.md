@@ -180,7 +180,7 @@ Trekster - простий та зручний додаток для веденн
 
 Користувач реєструється: вводить адресу електронної пошти, пароль, код з листа.
 
-## Use Case Діаграма
+## ER Діаграма
 
 <p align="center">
 	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/use_case.jpg" alt="Use case"/>
