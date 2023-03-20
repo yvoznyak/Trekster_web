@@ -183,6 +183,12 @@ Trekster - простий та зручний додаток для веденн
 ## ER Діаграма
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/use_case.jpg" alt="Use case"/>
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/er.jpg" alt="Use case"/>
+</p>
+
+## Use case Діаграма
+
+<p align="center">
+	<img src="https://github.com/yvoznyak/Trekster_web/blob/main/docs/images/use.jpg" alt="Use case"/>
 </p>
 
