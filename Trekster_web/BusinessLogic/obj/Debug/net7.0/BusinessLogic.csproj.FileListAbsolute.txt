@@ -1,0 +1,17 @@
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\bin\Debug\net7.0\BusinessLogic.deps.json
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\bin\Debug\net7.0\BusinessLogic.runtimeconfig.json
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\bin\Debug\net7.0\BusinessLogic.dll
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\bin\Debug\net7.0\BusinessLogic.pdb
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\BusinessLogic.csproj.AssemblyReference.cache
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\BusinessLogic.AssemblyInfoInputs.cache
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\BusinessLogic.AssemblyInfo.cs
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\BusinessLogic.dll
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\refint\BusinessLogic.dll
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\BusinessLogic.pdb
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\BusinessLogic.genruntimeconfig.cache
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\ref\BusinessLogic.dll
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\bin\Debug\net7.0\Infrastructure.dll
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\bin\Debug\net7.0\Infrastructure.pdb
+D:\Programing\Trekster-main\Trekster_web\BusinessLogic\obj\Debug\net7.0\BusinessLogic.csproj.CopyComplete

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Trekster_web.props" />
+</Project>
