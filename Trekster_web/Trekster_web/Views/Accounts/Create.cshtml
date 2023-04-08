@@ -20,8 +20,8 @@
             @foreach (var item in Model.StartBalances)
             {
                 <div class="form-group">
-                    <label asp-for="@item.Value" class="control-label">@item.Key</label>
-                    <input asp-for="@item.Value" name="StartBalances[@item.Key]" class="form-control" />
+                    <label asp-for="@item.Key" class="control-label">@item.Key</label>
+                    <input asp-for="@item.Value" name="@item.Key" class="form-control" />
                     <span asp-validation-for="@item.Value" class="text-danger"></span>
                 </div>
             }
