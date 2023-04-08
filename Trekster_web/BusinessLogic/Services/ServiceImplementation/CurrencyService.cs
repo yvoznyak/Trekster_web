@@ -43,5 +43,10 @@ namespace BusinessLogic.Services.ServiceImplementation
         {
             _currency.Delete(currencyId);
         }
+
+        public Currency GetByName(string name)
+        {
+            return _currency.GetAll().First(x => x.Name == name);
+        }
     }
 }

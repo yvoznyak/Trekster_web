@@ -1,14 +1,11 @@
 ﻿using BusinessLogic.Interfaces;
 using BusinessLogic.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Infrastructure.Entities;
 
 namespace BusinessLogic.Services.ServiceInterfaces
 {
     public interface ICurrencyService : IBase<CurrencyModel>
     {
+        Currency GetByName(string name);
     }
 }

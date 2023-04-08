@@ -38,5 +38,10 @@ namespace BusinessLogic.Services.ServiceImplementation
         {
             _account.Delete(accountId);
         }
+
+        public Account GetLast()
+        {
+            return _account.GetAll().OrderByDescending(x => x.Id).FirstOrDefault();
+        }
     }
 }

@@ -80,6 +80,33 @@ namespace Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Currencies");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Uah"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Usd"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Eur"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Usdt"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Btc"
+                        });
                 });
 
             modelBuilder.Entity("Infrastructure.Entities.StartBalance", b =>
