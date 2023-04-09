@@ -1,14 +1,15 @@
-﻿using BusinessLogic.Interfaces;
+﻿using System.Security.Claims;
 using BusinessLogic.Models;
 using BusinessLogic.Services.ServiceInterfaces;
 using Infrastructure.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
+using Trekster_web.Filters;
 using Trekster_web.Models;
 
 namespace Trekster_web.Controllers
 {
+    [AuthorizeFilter]
     public class AccountsController : Controller
     {
         private readonly UserManager<User> _userManager;
@@ -52,7 +53,7 @@ namespace Trekster_web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier).ToString();
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
 
                 var user = await _userManager.FindByIdAsync(userId);
 
