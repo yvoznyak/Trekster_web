@@ -3,11 +3,6 @@ using BusinessLogic.Interfaces;
 using BusinessLogic.Models;
 using BusinessLogic.Services.ServiceInterfaces;
 using Infrastructure.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogic.Services.ServiceImplementation
 {
@@ -42,6 +37,12 @@ namespace BusinessLogic.Services.ServiceImplementation
         public void Delete(int transactionId)
         {
             _transaction.Delete(transactionId);
+        }
+
+        public double GetFinalSum(int transactionId)
+        {
+            var transaction = _transaction.GetById(transactionId);
+            return transaction.Category.Type * transaction.Sum;
         }
     }
 }

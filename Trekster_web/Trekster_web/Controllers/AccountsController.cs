@@ -16,21 +16,60 @@ namespace Trekster_web.Controllers
         private readonly ICurrencyService _currencies;
         private readonly IAccountService _account;
         private readonly IStartBalanceService _startBalances;
+        private readonly ITransactionService _transaction;
 
         public AccountsController(ICurrencyService currencies,
                                   IAccountService account,
-                                  IStartBalanceService startBalances, 
+                                  IStartBalanceService startBalances,
+                                  ITransactionService transaction,
                                   UserManager<User> userManager)
         {
             _userManager = userManager;
             _currencies = currencies;
             _account = account;
             _startBalances = startBalances;
+            _transaction = transaction;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var accountsVM = new AccountsVM();
+            accountsVM.AccountsSummary = new List<string>();
+
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            var userAccounts = _account.GetAll().Where(x => x.User.Id == userId);
+
+            var dict = new Dictionary<AccountModel, Dictionary<string, double>>();
+
+            foreach(var account in userAccounts)
+            {
+                var startBalances = _startBalances.GetAll().Where(x => x.Account.Id == account.Id);
+                var tmpDict = new Dictionary<string, double>();
+
+                foreach (var startBalance in startBalances)
+                {
+                    tmpDict.Add(startBalance.Currency.Name, startBalance.Sum);
+                }
+
+                var transactions = _transaction.GetAll().Where(x => x.Account.Id == account.Id);
+                if (transactions.Any())
+                {
+                    foreach (var transaction in transactions)
+                    {
+                        tmpDict[transaction.Currency.Name] += _transaction.GetFinalSum(transaction.Id);
+                    }
+                }
+
+                var text = $"{account.Name}: ";
+                foreach (var key in tmpDict.Keys)
+                {
+                    text += $"{tmpDict[key]} {key} ";
+                }
+
+                accountsVM.AccountsSummary.Add(text);
+            }
+
+            return View(accountsVM);
         }
 
         public IActionResult Create()
@@ -95,8 +134,10 @@ namespace Trekster_web.Controllers
 
                 return RedirectToAction(nameof(Index));
             }
-
-            return View(accountsVM);
+            else
+            {
+                return View(accountsVM);
+            }
         }
     }
 }

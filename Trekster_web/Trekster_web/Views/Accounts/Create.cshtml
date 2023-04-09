@@ -21,8 +21,7 @@
             {
                 <div class="form-group">
                     <label asp-for="@item.Value" class="control-label">@item.Key</label>
-                    <input asp-for="@item.Value" name="StartBalances[@item.Key]" class="form-control" />
-                    <span asp-validation-for="@item.Value" class="text-danger"></span>
+                    <input asp-for="@item.Value" type="number" name="StartBalances[@item.Key]" class="form-control" />
                 </div>
             }
             <div class="form-group">

@@ -10,5 +10,6 @@ namespace BusinessLogic.Services.ServiceInterfaces
 {
     public interface ITransactionService : IBase<TransactionModel>
     {
+        double GetFinalSum(int transactionId);
     }
 }

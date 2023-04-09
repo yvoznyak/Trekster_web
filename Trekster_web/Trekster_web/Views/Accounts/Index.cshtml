@@ -5,5 +5,12 @@
 }
 
 <h1>Рахунки</h1>
+        
+@foreach (var item in Model.AccountsSummary)
+{
+    <div>
+        @Html.DisplayFor(modelItem => item)
+    </div>
+}
 
 <a asp-action="Create" class="btn btn-outline-danger">Додати рахунок</a>
