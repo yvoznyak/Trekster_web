@@ -5,3 +5,37 @@
 }
 
 <h1>Налаштування категорій</h1>
+
+<a asp-action="Create" class="btn btn-outline-danger">Додати категорію</a>
+
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Categories)
+        {
+                <tr>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        <a asp-action="EditCategory" asp-route-id="@item.Id" class="btn btn-outline-info">Edit</a> |
+                    <a asp-action="DeleteCategory" asp-route-id="@item.Id" class="btn btn-outline-danger">Delete</a>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
