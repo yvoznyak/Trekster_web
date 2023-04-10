@@ -3,6 +3,8 @@ using BusinessLogic.Interfaces;
 using BusinessLogic.Models;
 using BusinessLogic.Services.ServiceInterfaces;
 using Infrastructure.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
 
 namespace BusinessLogic.Services.ServiceImplementation
 {
@@ -10,16 +12,22 @@ namespace BusinessLogic.Services.ServiceImplementation
     {
         private readonly IAccount _account;
         private readonly IMapper _mapper;
+        private readonly UserManager<User> _userManager;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public AccountService(IAccount account, IMapper mapper)
+        public AccountService(IAccount account, IMapper mapper, UserManager<User> userManager, IHttpContextAccessor httpContextAccessor)
         {
             _account = account;
             _mapper = mapper;
+            _userManager = userManager;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public IEnumerable<AccountModel> GetAll()
         {
-            var entities = _account.GetAll();
+            var user = _userManager.GetUserAsync(_httpContextAccessor.HttpContext.User).Result;
+
+            var entities = _account.GetAll().Where(x => x.UserId == user.Id.ToString());
             return _mapper.Map<List<AccountModel>>(entities);
         }
 
@@ -31,6 +39,8 @@ namespace BusinessLogic.Services.ServiceImplementation
 
         public void Save(AccountModel account)
         {
+            var user = _userManager.GetUserAsync(_httpContextAccessor.HttpContext.User).Result;
+            account.UserId = user.Id.ToString();
             _account.Save(_mapper.Map<Account>(account));
         }
 

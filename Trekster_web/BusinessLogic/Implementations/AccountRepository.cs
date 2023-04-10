@@ -1,17 +1,21 @@
 ﻿using BusinessLogic.Interfaces;
 using Infrastructure;
 using Infrastructure.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Implementations
 {
     public class AccountRepository : IAccount
     {
+        public UserManager<User> _userManager { get; set; }
+
         public AppDbContext context { get; set; }
 
-        public AccountRepository(AppDbContext context)
+        public AccountRepository(AppDbContext context, UserManager<User> userManager)
         {
             this.context = context;
+            this._userManager = userManager;
         }
 
         public IEnumerable<Account> GetAll()
@@ -26,6 +30,8 @@ namespace BusinessLogic.Implementations
 
         public void Save(Account account)
         {
+            account.User = context.Users.FirstOrDefault(x => x.Id == account.UserId);
+
             if (account.Id == default)
             {
                 context.Entry(account).State = EntityState.Added;

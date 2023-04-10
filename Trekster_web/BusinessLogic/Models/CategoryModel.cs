@@ -11,7 +11,6 @@ namespace BusinessLogic.Models
     {
         public string Name { get; set; }
 
-        [RegularExpression("^(1|-1)$")]
         public int Type { get; set; }
     }
 }

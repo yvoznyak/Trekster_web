@@ -1,11 +1,11 @@
-﻿using BusinessLogic.Models;
-
-namespace Trekster_web.Models
+﻿namespace Trekster_web.Models
 {
     public class AccountVM
     {
-        public AccountModel Account { get; set; } = new AccountModel();
+        public int Id { get; set; } = 0;
 
-        public IEnumerable<AccountModel> Accounts { get; set; } = new List<AccountModel>();
+        public string Name { get; set; } = string.Empty;
+        
+        public string UserId { get; set; } = string.Empty;
     }
 }

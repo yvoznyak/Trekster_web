@@ -1,12 +1,13 @@
-﻿using BusinessLogic.Models;
-using Infrastructure.Entities;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Trekster_web.Models
 {
     public class CategoryVM
     {
-        public CategoryModel CategoryModel { get; set; } = new CategoryModel();
+        public int Id { get; set; } = 0;
 
-        public IEnumerable<CategoryModel> CategoryModels { get; set; } = new List<CategoryModel>();
+        public string Name { get; set; } = string.Empty;
+
+        public int Type { get; set; } = 1;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Security.Claims;
+using AutoMapper;
 using BusinessLogic.Models;
 using BusinessLogic.Services.ServiceInterfaces;
 using Infrastructure.Entities;
@@ -12,23 +13,23 @@ namespace Trekster_web.Controllers
     [AuthorizeFilter]
     public class AccountsController : Controller
     {
-        private readonly UserManager<User> _userManager;
         private readonly ICurrencyService _currencies;
         private readonly IAccountService _account;
         private readonly IStartBalanceService _startBalances;
         private readonly ITransactionService _transaction;
+        private readonly IMapper _mapper;
 
         public AccountsController(ICurrencyService currencies,
                                   IAccountService account,
                                   IStartBalanceService startBalances,
                                   ITransactionService transaction,
-                                  UserManager<User> userManager)
+                                  IMapper mapper)
         {
-            _userManager = userManager;
             _currencies = currencies;
             _account = account;
             _startBalances = startBalances;
             _transaction = transaction;
+            _mapper = mapper;
         }
 
         public async Task<IActionResult> Index()
@@ -36,14 +37,13 @@ namespace Trekster_web.Controllers
             var accountsVM = new AccountsVM();
             accountsVM.AccountsSummary = new List<string>();
 
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
-            var userAccounts = _account.GetAll().Where(x => x.User.Id == userId);
+            var userAccounts = _account.GetAll();
 
             var dict = new Dictionary<AccountModel, Dictionary<string, double>>();
 
-            foreach(var account in userAccounts)
+            foreach (var account in userAccounts)
             {
-                var startBalances = _startBalances.GetAll().Where(x => x.Account.Id == account.Id);
+                var startBalances = _startBalances.GetAllForAccount(account);
                 var tmpDict = new Dictionary<string, double>();
 
                 foreach (var startBalance in startBalances)
@@ -51,7 +51,7 @@ namespace Trekster_web.Controllers
                     tmpDict.Add(startBalance.Currency.Name, startBalance.Sum);
                 }
 
-                var transactions = _transaction.GetAll().Where(x => x.Account.Id == account.Id);
+                var transactions = _transaction.GetAllForAccount(account);
                 if (transactions.Any())
                 {
                     foreach (var transaction in transactions)
@@ -90,45 +90,25 @@ namespace Trekster_web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(AccountsVM accountsVM)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && StartBalancesNotEmpty(accountsVM))
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+                var accountModel = new AccountModel();
+                accountModel = _mapper.Map<AccountModel>(accountsVM);
 
-                var user = await _userManager.FindByIdAsync(userId);
+                _account.Save(accountModel);
 
-                bool create = false;
                 foreach (var tmp in accountsVM.StartBalances)
                 {
                     if (tmp.Value != 0)
                     {
-                        create = true;
-                        break;
-                    }
-                }
-
-                if (create)
-                {
-                    var accountModel = new AccountModel
-                    {
-                        Name = accountsVM.Name,
-                        User = user
-                    };
-
-                    _account.Save(accountModel);
-
-                    foreach (var tmp in accountsVM.StartBalances)
-                    {
-                        if (tmp.Value != 0)
+                        var startBalanceModel = new StartBalanceModel
                         {
-                            var startBalanceModel = new StartBalanceModel
-                            {
-                                Sum = tmp.Value,
-                                Account = _account.GetLast(),
-                                Currency = _currencies.GetByName(tmp.Key),
-                            };
+                            Sum = tmp.Value,
+                            Account = _account.GetLast(),
+                            Currency = _currencies.GetByName(tmp.Key),
+                        };
 
-                            _startBalances.Save(startBalanceModel);
-                        }
+                        _startBalances.Save(startBalanceModel);
                     }
                 }
 
@@ -138,6 +118,21 @@ namespace Trekster_web.Controllers
             {
                 return View(accountsVM);
             }
+        }
+
+        private bool StartBalancesNotEmpty (AccountsVM accountsVM)
+        {
+            bool create = false;
+            foreach (var tmp in accountsVM.StartBalances)
+            {
+                if (tmp.Value != 0)
+                {
+                    create = true;
+                    break;
+                }
+            }
+
+            return create;
         }
     }
 }

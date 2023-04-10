@@ -1,4 +1,6 @@
-﻿using BusinessLogic.Services.ServiceInterfaces;
+﻿using AutoMapper;
+using BusinessLogic.Models;
+using BusinessLogic.Services.ServiceInterfaces;
 using Infrastructure.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -15,12 +17,14 @@ namespace Trekster_web.Controllers
         private readonly UserManager<User> _userManager;
         private readonly IAccountService _account;
         private readonly ICategoryService _category;
+        private readonly IMapper _mapper;
 
-        public SettingsController(IAccountService account, UserManager<User> userManager, ICategoryService category)
+        public SettingsController(IAccountService account, UserManager<User> userManager, ICategoryService category, IMapper mapper)
         {
             _account = account;
             _userManager = userManager;
             _category = category;
+            _mapper = mapper;
         }
 
         public IActionResult Index()
@@ -31,43 +35,46 @@ namespace Trekster_web.Controllers
         public IActionResult Accounts()
         {
             var settingsVM = new SettingsVM();
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
-            settingsVM.Accounts = _account.GetAll().Where(x => x.User.Id == userId);
+            settingsVM.Accounts = _account.GetAll();
             return View(settingsVM);
         }
 
         public async Task<IActionResult> EditAccount(int id)
         {
-            var settingsVM = new SettingsVM();
-            settingsVM.Account = _account.GetById(id);
-            return View(settingsVM);
+            var accountVM = new AccountVM();
+            accountVM = _mapper.Map<AccountVM>(_account.GetById(id));
+            return View(accountVM);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditAccount(int id, SettingsVM settingsVM)
+        public async Task<IActionResult> EditAccount(int id, AccountVM accountVM)
         {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
-            var user = await _userManager.FindByIdAsync(userId);
-            settingsVM.Account.User = user;
+            if (ModelState.IsValid)
+            {
+                _account.Save(_mapper.Map<AccountModel>(accountVM));
+                return RedirectToAction(nameof(Accounts));
+            }
 
-            _account.Save(settingsVM.Account);
-            return RedirectToAction(nameof(Accounts));
+            return View(accountVM);
         }
 
         public async Task<IActionResult> DeleteAccount(int id)
         {
-            var settingsVM = new SettingsVM();
-            settingsVM.Account = _account.GetById(id);
-            return View(settingsVM);
+            return View(_mapper.Map<AccountVM>(_account.GetById(id)));
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteAccount(int id, SettingsVM settingsVM)
+        public async Task<IActionResult> DeleteAccount(int id, AccountVM accountVM)
         {
-            _account.Delete(id);
-            return RedirectToAction(nameof(Accounts));
+            if (ModelState.IsValid)
+            {
+                _account.Delete(id);
+                return RedirectToAction(nameof(Accounts));
+            }
+
+            return View(accountVM);
         }
 
         public IActionResult Categories()
@@ -84,39 +91,53 @@ namespace Trekster_web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(SettingsVM settingsVM)
+        public async Task<IActionResult> Create(CategoryVM categoryVM)
         {
-            _category.Save(settingsVM.Category);
-            return RedirectToAction(nameof(Categories));
+            if (ModelState.IsValid)
+            {
+                _category.Save(_mapper.Map<CategoryModel>(categoryVM));
+                return RedirectToAction(nameof(Categories));
+            }
+
+            return View(categoryVM);
         }
 
         public async Task<IActionResult> EditCategory(int id)
         {
-            var settingsVM = new SettingsVM();
-            settingsVM.Category = _category.GetById(id);
-            return View(settingsVM);
+            var categoryVM = new CategoryVM();
+
+            categoryVM = _mapper.Map<CategoryVM>(_category.GetById(id));
+
+            return View(categoryVM);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditCategory(int id, SettingsVM settingsVM)
+        public async Task<IActionResult> EditCategory(int id, CategoryVM categoryVM)
         {
-            _category.Save(settingsVM.Category);
-            return RedirectToAction(nameof(Categories));
+            if (ModelState.IsValid)
+            {
+                _category.Save(_mapper.Map<CategoryModel>(categoryVM));
+                return RedirectToAction(nameof(Categories));
+            }
+
+            return View(categoryVM);
         }
 
         public async Task<IActionResult> DeleteCategory(int id)
         {
-            var settingsVM = new SettingsVM();
-            settingsVM.Category = _category.GetById(id);
-            return View(settingsVM);
+            var categoryVM = new CategoryVM();
+
+            categoryVM = _mapper.Map<CategoryVM>(_category.GetById(id));
+
+            return View(categoryVM);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteCategory(int id, SettingsVM settingsVM)
+        public async Task<IActionResult> DeleteCategory(int id, CategoryVM categoryVM)
         {
-            _category.Delete(id);
+            _category.Delete(categoryVM.Id);
             return RedirectToAction(nameof(Categories));
         }
     }

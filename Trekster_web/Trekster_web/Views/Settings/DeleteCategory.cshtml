@@ -1,4 +1,4 @@
-﻿@model SettingsVM
+﻿@model CategoryVM
 @{
     ViewData["Title"] = "Видалити категорію";
 }
@@ -14,13 +14,13 @@
             Назва
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Category.Name)
+            @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class="col-sm-2">
             Тип
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Category.Type)
+            @Html.DisplayFor(model => model.Type)
         </dd>
     </dl>
 

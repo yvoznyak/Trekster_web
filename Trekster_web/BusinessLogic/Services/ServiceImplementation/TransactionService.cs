@@ -23,6 +23,12 @@ namespace BusinessLogic.Services.ServiceImplementation
             return _mapper.Map<List<TransactionModel>>(entities);
         }
 
+        public IEnumerable<TransactionModel> GetAllForAccount(AccountModel accountModel)
+        {
+            var entities = _transaction.GetAll().Where(x => x.AccountId == accountModel.Id);
+            return _mapper.Map<List<TransactionModel>>(entities);
+        }
+
         public TransactionModel GetById(int transactionId)
         {
             var entity = _transaction.GetById(transactionId);

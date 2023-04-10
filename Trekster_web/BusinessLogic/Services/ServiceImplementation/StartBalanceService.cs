@@ -28,6 +28,12 @@ namespace BusinessLogic.Services.ServiceImplementation
             return _mapper.Map<List<StartBalanceModel>>(entities);
         }
 
+        public IEnumerable<StartBalanceModel> GetAllForAccount(AccountModel accountModel)
+        {
+            var entities = _startBalance.GetAll().Where(x => x.AccountId == accountModel.Id);
+            return _mapper.Map<List<StartBalanceModel>>(entities);
+        }
+
         public StartBalanceModel GetById(int startBalanceId)
         {
             var entity = _startBalance.GetById(startBalanceId);
@@ -36,6 +42,8 @@ namespace BusinessLogic.Services.ServiceImplementation
 
         public void Save(StartBalanceModel startBalance)
         {
+            startBalance.Sum = Math.Round(startBalance.Sum, 5);
+
             _startBalance.Save(_mapper.Map<StartBalance>(startBalance));
         }
 

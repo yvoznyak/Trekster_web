@@ -1,4 +1,4 @@
-﻿@model SettingsVM
+﻿@model CategoryVM
 
 @{
     ViewData["Title"] = "Редагую категорію";
@@ -12,16 +12,20 @@
     <div class="col-md-4">
         <form asp-action="EditCategory">
             <div asp-validation-summary="All" class="text-danger"></div>
-            <input type="hidden" asp-for="Category.Id" />
+            <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="Category.Name" class="control-label"></label>
-                <input asp-for="Category.Name" class="form-control" />
-                <span asp-validation-for="Category.Name" class="text-danger"></span>
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Category.Type" class="control-label"></label>
-                <input asp-for="Category.Type" class="form-control" />
-                <span asp-validation-for="Category.Type" class="text-danger"></span>
+            <div>
+                <label>Оберіть тип категорії</label>
+                <label>
+                    <input asp-for="Type" type="radio" name="Type" value="1" checked /> Дохід
+                </label>
+                <label>
+                    <input asp-for="Type" type="radio" name="Type" value="-1" /> Витрата
+                </label>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

@@ -7,6 +7,7 @@ using Infrastructure;
 using Infrastructure.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Trekster_web.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,10 @@ builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IStartBalanceService, StartBalanceService>();
 builder.Services.AddScoped<ITransactionService, TransactionService>();
+
+builder.Services.AddAutoMapper(typeof(CategoryVMProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(AccountVMProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(AccountsVMProfile).Assembly);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {

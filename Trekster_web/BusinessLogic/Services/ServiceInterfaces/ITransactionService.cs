@@ -11,5 +11,6 @@ namespace BusinessLogic.Services.ServiceInterfaces
     public interface ITransactionService : IBase<TransactionModel>
     {
         double GetFinalSum(int transactionId);
+        IEnumerable<TransactionModel> GetAllForAccount(AccountModel accountModel);
     }
 }
