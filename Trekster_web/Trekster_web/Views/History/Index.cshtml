@@ -1,5 +1,20 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model HistoryVM
+
 @{
+    ViewData["Title"] = "Історія транзакцій";
+}
+
+@foreach (var item in Model.TransactionInfo)
+{
+    <tr>
+        <td>
+            @item.Value
+        </td>
+        <td>
+            <a asp-action="EditTransaction" asp-route-id="@item.Key" class="btn btn-outline-info">Edit</a> |
+            <a asp-action="DeleteTransaction" asp-route-id="@item.Key" class="btn btn-outline-danger">Delete</a>
+        </td>
+    </tr>
+    <hr />
+    <br />
 }

@@ -16,7 +16,10 @@ namespace BusinessLogic.Services.ServiceImplementation
         private readonly UserManager<User> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public AccountService(IAccount account, IMapper mapper, UserManager<User> userManager, IHttpContextAccessor httpContextAccessor)
+        public AccountService(IAccount account,
+                              IMapper mapper,
+                              UserManager<User> userManager,
+                              IHttpContextAccessor httpContextAccessor)
         {
             _account = account;
             _mapper = mapper;
