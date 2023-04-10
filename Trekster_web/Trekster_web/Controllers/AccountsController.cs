@@ -48,7 +48,7 @@ namespace Trekster_web.Controllers
 
                 foreach (var startBalance in startBalances)
                 {
-                    tmpDict.Add(startBalance.Currency.Name, startBalance.Sum);
+                    tmpDict.Add(_currencies.GetById(startBalance.CurrencyId).Name, startBalance.Sum);
                 }
 
                 var transactions = _transaction.GetAllForAccount(account);
@@ -56,7 +56,7 @@ namespace Trekster_web.Controllers
                 {
                     foreach (var transaction in transactions)
                     {
-                        tmpDict[transaction.Currency.Name] += _transaction.GetFinalSum(transaction.Id);
+                        tmpDict[_currencies.GetById(transaction.CurrencyId).Name] += _transaction.GetFinalSum(transaction.Id);
                     }
                 }
 
@@ -104,8 +104,8 @@ namespace Trekster_web.Controllers
                         var startBalanceModel = new StartBalanceModel
                         {
                             Sum = tmp.Value,
-                            Account = _account.GetLast(),
-                            Currency = _currencies.GetByName(tmp.Key),
+                            AccountId = _account.GetLast().Id,
+                            CurrencyId = _currencies.GetByName(tmp.Key).Id,
                         };
 
                         _startBalances.Save(startBalanceModel);

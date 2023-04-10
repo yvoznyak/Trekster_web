@@ -6,6 +6,6 @@ namespace BusinessLogic.Services.ServiceInterfaces
 {
     public interface IAccountService : IBase<AccountModel>
     {
-        Account GetLast();
+        AccountModel GetLast();
     }
 }

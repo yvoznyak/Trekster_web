@@ -1,12 +1,7 @@
-﻿using Infrastructure.Entities;
+﻿using BusinessLogic.Interfaces;
 using Infrastructure;
+using Infrastructure.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BusinessLogic.Interfaces;
 
 namespace BusinessLogic.Implementations
 {
@@ -35,6 +30,9 @@ namespace BusinessLogic.Implementations
 
         public void Save(Transaction transaction)
         {
+            transaction.Account = context.Accounts.FirstOrDefault(x => x.Id == transaction.AccountId);
+            transaction.Currency = context.Currencies.FirstOrDefault(x => x.Id == transaction.CurrencyId);
+            transaction.Category = context.Categories.FirstOrDefault(x => x.Id == transaction.CategoryId);
             if (transaction.Id == default)
             {
                 context.Entry(transaction).State = EntityState.Added;

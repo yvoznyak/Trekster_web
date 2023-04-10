@@ -33,6 +33,7 @@ builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddAutoMapper(typeof(CategoryVMProfile).Assembly);
 builder.Services.AddAutoMapper(typeof(AccountVMProfile).Assembly);
 builder.Services.AddAutoMapper(typeof(AccountsVMProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(TransactionVMProfile).Assembly);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {

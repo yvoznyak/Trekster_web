@@ -6,6 +6,7 @@ namespace BusinessLogic.Services.ServiceInterfaces
 {
     public interface ICurrencyService : IBase<CurrencyModel>
     {
-        Currency GetByName(string name);
+        CurrencyModel GetByName(string name);
+        IEnumerable<CurrencyModel> GetAllByAccount(AccountModel accountModel);
     }
 }

@@ -5,6 +5,7 @@ using BusinessLogic.Services.ServiceInterfaces;
 using Infrastructure.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
+using System.Security.Principal;
 
 namespace BusinessLogic.Services.ServiceImplementation
 {
@@ -49,9 +50,10 @@ namespace BusinessLogic.Services.ServiceImplementation
             _account.Delete(accountId);
         }
 
-        public Account GetLast()
+        public AccountModel GetLast()
         {
-            return _account.GetAll().OrderByDescending(x => x.Id).FirstOrDefault();
+            var account = _account.GetAll().OrderByDescending(x => x.Id).FirstOrDefault();
+            return _mapper.Map<AccountModel>(account);
         }
     }
 }

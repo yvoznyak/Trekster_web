@@ -1,12 +1,4 @@
-﻿using Infrastructure.Entities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BusinessLogic.Models
+﻿namespace BusinessLogic.Models
 {
     public class TransactionModel : BaseModel
     {
@@ -14,10 +6,10 @@ namespace BusinessLogic.Models
 
         public double Sum { get; set; }
 
-        public virtual Account Account { get; set; }
+        public int AccountId { get; set; }
 
-        public virtual Currency Currency { get; set; }
+        public int CurrencyId { get; set; }
 
-        public virtual Category Category { get; set; }
+        public int CategoryId { get; set; }
     }
 }

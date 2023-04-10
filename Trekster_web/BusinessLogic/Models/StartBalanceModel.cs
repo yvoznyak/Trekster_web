@@ -11,8 +11,8 @@ namespace BusinessLogic.Models
     {
         public double Sum { get; set; }
 
-        public virtual Account Account { get; set; }
+        public int AccountId { get; set; }
 
-        public virtual Currency Currency { get; set; }
+        public int CurrencyId { get; set; }
     }
 }
