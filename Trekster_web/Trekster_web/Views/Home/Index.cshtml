@@ -1,15 +1,18 @@
-﻿@{
+﻿@model HomeVM
+
+@{
     ViewData["Title"] = "Головна";
 }
 
 <div>
-    Загалом
+    @Html.DisplayFor(model => model.Summary)
 </div>
 
 <div>
-    Витрати:
+    Частка витрат: @Html.DisplayFor(model => model.ExpencesPercentage)%
+    </br>
 
-    Залишок:
+    Частка залишку: @Html.DisplayFor(model => model.ProfitsPercentage)%
 </div>
 
 <a asp-action="CreateTransaction" class="btn btn-outline-danger">Додати транзакцію</a>

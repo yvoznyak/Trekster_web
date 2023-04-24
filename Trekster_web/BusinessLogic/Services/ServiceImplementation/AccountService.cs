@@ -5,7 +5,6 @@ using BusinessLogic.Services.ServiceInterfaces;
 using Infrastructure.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
-using System.Security.Principal;
 
 namespace BusinessLogic.Services.ServiceImplementation
 {

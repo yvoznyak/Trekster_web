@@ -4,6 +4,8 @@ namespace Trekster_web.Models
 {
     public class TransactionVM
     {
+        public int Id { get; set; } = 0;
+
         public DateTime Date { get; set; } = DateTime.Now.ToUniversalTime();
 
         public double Sum { get; set; } = 0;

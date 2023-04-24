@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using AutoMapper;
+using BusinessLogic.Interfaces;
 using BusinessLogic.Models;
 using BusinessLogic.Services.ServiceInterfaces;
 using Infrastructure.Entities;
@@ -42,7 +43,11 @@ namespace Trekster_web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var homeVM = new HomeVM();
+            homeVM.Summary = GetSummary();
+            homeVM.ExpencesPercentage = GetExpencesPercentage();
+            homeVM.ProfitsPercentage = 100 - homeVM.ExpencesPercentage;
+            return View(homeVM);
         }
 
         public IActionResult CreateTransaction()
@@ -107,6 +112,67 @@ namespace Trekster_web.Controllers
             transactionVM.CurrencyId = Convert.ToInt32(array[0]);
 
             return transactionVM;
+        }
+
+        private string GetSummary()
+        {
+            var dict = new Dictionary<int, double>();
+            var currencies = _currency.GetAll();
+            foreach (var cur in currencies)
+            {
+                dict.Add(cur.Id, 0);
+            }
+
+            var userAccounts = _account.GetAll();
+
+            foreach (var account in userAccounts)
+            {
+                var startBalances = _startBalance.GetAllForAccount(account);
+
+                foreach (var startBalance in startBalances)
+                {
+                    dict[startBalance.CurrencyId] += startBalance.Sum;
+                }
+            }
+
+            var transactions = _transaction.GetAllForUser();
+
+            foreach (var transaction in transactions)
+            {
+                dict[transaction.CurrencyId] += _transaction.GetFinalSum(transaction.Id);
+            }
+
+
+            var res = $"Загалом: ";
+
+            foreach (var elem in dict)
+            {
+                if (elem.Value != 0)
+                {
+                    var currencyName = _currency.GetById(elem.Key).Name;
+                    res += $"{elem.Value} {currencyName}, ";
+                }
+            }
+
+            res = res.Remove(res.Length - 2);
+
+            return res;
+        }
+
+        private double GetExpencesPercentage()
+        {
+            var transactions = _transaction.GetAllForUser();
+            var profitTransactions = transactions.Where(x => _category
+                                                 .GetById(x.CategoryId).Type == 1)
+                                                 .Select(x => x.Sum)
+                                                 .Sum();
+
+            var expenceTransactions = transactions.Where(x => _category
+                                                 .GetById(x.CategoryId).Type == -1)
+                                                 .Select(x => x.Sum)
+                                                 .Sum();
+
+            return Math.Round(100 * expenceTransactions / profitTransactions, 2);
         }
     }
 }

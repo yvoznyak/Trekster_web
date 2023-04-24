@@ -8,14 +8,11 @@ namespace BusinessLogic.Implementations
 {
     public class AccountRepository : IAccount
     {
-        public UserManager<User> _userManager { get; set; }
-
         public AppDbContext context { get; set; }
 
-        public AccountRepository(AppDbContext context, UserManager<User> userManager)
+        public AccountRepository(AppDbContext context)
         {
             this.context = context;
-            this._userManager = userManager;
         }
 
         public IEnumerable<Account> GetAll()

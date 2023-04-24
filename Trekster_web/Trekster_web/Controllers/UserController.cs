@@ -14,11 +14,13 @@ namespace Trekster_web.Controllers
     {
         private readonly IMapper _mapper;
         private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
 
-        public UserController(IMapper mapper, UserManager<User> userManager)
+        public UserController(IMapper mapper, UserManager<User> userManager, SignInManager<User> signInManager)
         {
             _mapper = mapper;
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         [HttpGet]
@@ -29,24 +31,15 @@ namespace Trekster_web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(Models.UserVM userModel)
+        public async Task<IActionResult> Login(UserVM userModel)
         {
             if (!ModelState.IsValid)
             {
                 return View(userModel);
             }
-
-            var user = await _userManager.FindByEmailAsync(userModel.Email);
-            if (user != null &&
-                await _userManager.CheckPasswordAsync(user, userModel.Password))
+            var result = await _signInManager.PasswordSignInAsync(userModel.Email, userModel.Password, userModel.RememberMe, false);
+            if (result.Succeeded)
             {
-                var identity = new ClaimsIdentity(IdentityConstants.ApplicationScheme);
-
-                identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id));
-                identity.AddClaim(new Claim(ClaimTypes.Name, user.UserName));
-
-                await HttpContext.SignInAsync(IdentityConstants.ApplicationScheme, new ClaimsPrincipal(identity));
-
                 return RedirectToAction(nameof(HomeController.Index), "Home");
             }
             else
@@ -88,6 +81,14 @@ namespace Trekster_web.Controllers
                 return View(registerModel);
             }
 
+            return RedirectToAction(nameof(HomeController.Index), "Home");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
             return RedirectToAction(nameof(HomeController.Index), "Home");
         }
     }
