@@ -1062,3 +1062,7 @@ C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_we
 C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web\obj\Debug\net7.0\Trekster_web.pdb
 C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web\obj\Debug\net7.0\Trekster_web.genruntimeconfig.cache
 C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web\obj\Debug\net7.0\ref\Trekster_web.dll
+C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web\bin\Debug\net7.0\MailKit.dll
+C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web\bin\Debug\net7.0\MimeKit.dll
+C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web\bin\Debug\net7.0\NETCore.MailKit.dll
+C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web\bin\Debug\net7.0\BouncyCastle.Crypto.dll

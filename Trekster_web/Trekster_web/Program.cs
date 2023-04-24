@@ -1,12 +1,15 @@
 using BusinessLogic.Implementations;
 using BusinessLogic.Interfaces;
 using BusinessLogic.Mapping.Profiles;
+using BusinessLogic.Models;
 using BusinessLogic.Services.ServiceImplementation;
 using BusinessLogic.Services.ServiceInterfaces;
+using EmailService;
 using Infrastructure;
 using Infrastructure.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 using Trekster_web.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -41,6 +44,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         builder.Configuration.GetConnectionString("DefaultConnection"),
         b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
 });
+
+var emailConfig = builder.Configuration.GetSection("EmailConfiguration")
+  .Get<EmailConfiguration>();
+
+builder.Services.AddSingleton(emailConfig);
+builder.Services.AddScoped<IEmailSender, EmailSender>();
 
 builder.Services.AddIdentity<User, IdentityRole>(options =>
 {
