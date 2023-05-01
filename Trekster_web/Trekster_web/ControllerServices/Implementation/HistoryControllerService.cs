@@ -40,9 +40,9 @@ namespace Trekster_web.ControllerServices.Implementation
 
             foreach (var transaction in lst)
             {
-                var text = $"{transaction.Date.ToString("dd-mm-yyyy")}," +
-                           $" {_account.GetById(transaction.AccountId).Name}" +
-                           $" {_category.GetById(transaction.CategoryId).Name}" +
+                var text = $"{transaction.Date.ToString("dd.mm.yyyy")}," +
+                           $" {_account.GetById(transaction.AccountId).Name}," +
+                           $" {_category.GetById(transaction.CategoryId).Name}," +
                            $" {_category.GetById(transaction.CategoryId).Type * transaction.Sum}" +
                            $" {_currency.GetById(transaction.CurrencyId).Name}";
                 dict.Add(transaction.Id, text);

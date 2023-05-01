@@ -4,40 +4,47 @@
     ViewData["Title"] = "Додати категорію";
 }
 
-<h1>Create</h1>
+<h2 style="margin-top: 3rem;"><center>Додати категорію</center></h2>
 
-<h4>Category</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div>
-                <label>Оберіть тип категорії</label>
-                <label>
-                    <input asp-for="Type" type="radio" name="Type" value="1" checked /> Дохід
-                </label>
-                <label>
-                    <input asp-for="Type" type="radio" name="Type" value="-1" /> Витрата
-                </label>
-            </div>
-            <span asp-validation-for="Type"></span>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Categories">Back to List</a>
-</div>
+<center>
+    <div class="row" style="justify-content: center;">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label">Назва</label>
+                    <input asp-for="Name" class="form-control" style="margin-bottom: 0.5rem;"/>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div style="display: flex; flex-direction: column; margin-bottom: 1rem;">
+                    <label style="margin-bottom: 0.5rem;">Оберіть тип категорії</label>
+                    <div>
+                        <label style="margin-right: 1rem;">
+                            <input asp-for="Type" type="radio" name="Type" value="1" checked /> Дохід
+                        </label>
+                        <label>
+                            <input asp-for="Type" type="radio" name="Type" value="-1" /> Витрата
+                        </label>
+                    </div>
+                </div>
+                <span asp-validation-for="Type"></span>
+                <form asp-action="Create">
+                    <input type="submit" value="Додати" class="btn btn-primary" style="padding-right: 4rem; padding-left: 4rem;">
+                </form>
+            </form>
+        </div>
+    </div>
+
+    <div style="margin-top: 1rem;">
+        <a asp-action="Categories">Назад до списку категорій</a>
+    </div>
+
+</center>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

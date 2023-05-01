@@ -4,8 +4,14 @@
     ViewData["Title"] = "Налаштування";
 }
 
-<h1>Налаштування</h1>
+<h2 style="margin-top: 3rem;"><center>Налаштування</center></h2>
 
-<a asp-action="Accounts" class="btn btn-success">Рахунки</a>
+<hr />
 
-<a asp-action="Categories" class="btn btn-success">Категорії</a>
+<center>
+    <div style="margin-top: 3rem; display: flex; justify-content: center; flex-direction: column; max-width: 30%;">
+        <a asp-action="Accounts" class="btn btn-info">Рахунки</a>
+
+        <a asp-action="Categories" class="btn btn-info" style="margin-top: 2rem;">Категорії</a>
+    </div>
+</center>

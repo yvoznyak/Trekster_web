@@ -4,15 +4,18 @@
     ViewData["Title"] = "Головна";
 }
 
-<div>
-    @Html.DisplayFor(model => model.Summary)
-</div>
+<center>
+    <div style="margin-bottom: 1.5rem !important; border: 2px solid #17a2b8; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: #cce5ff; color: #004085;">
+        @Html.DisplayFor(model => model.Summary)
+    </div>
 
-<div>
-    Частка витрат: @Html.DisplayFor(model => model.ExpencesPercentage)%
-    </br>
+    <div style="margin-bottom: 1rem !important; border: 2px solid #dc3545; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: #f8d7da; color: #721c24;">
+        Частка витрат: @Html.DisplayFor(model => model.ExpencesPercentage)%
+    </div>
 
-    Частка залишку: @Html.DisplayFor(model => model.ProfitsPercentage)%
-</div>
+    <div style="margin-bottom: 1.5rem !important; border: 2px solid #28a745; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: #d4edda; color: #155724;">
+        Частка залишку: @Html.DisplayFor(model => model.ProfitsPercentage)%
+    </div>
 
-<a asp-action="CreateTransaction" class="btn btn-outline-danger">Додати транзакцію</a>
+    <a asp-action="CreateTransaction" class="btn btn-primary" style="padding-right: 4rem; padding-left: 4rem;">Додати транзакцію</a>
+</center>

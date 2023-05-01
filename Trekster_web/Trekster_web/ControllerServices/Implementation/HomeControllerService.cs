@@ -125,6 +125,18 @@ namespace Trekster_web.ControllerServices.Implementation
                                                  .Select(x => x.Sum)
                                                  .Sum();
 
+            var accounts = _account.GetAll();
+
+            foreach (var account in accounts)
+            {
+                var startBalances = _startBalance.GetAllForAccount(account);
+
+                foreach (var startBalance in startBalances)
+                {
+                    profitTransactions += startBalance.Sum;
+                }
+            }
+
             var expenceTransactions = transactions.Where(x => _category
                                                  .GetById(x.CategoryId).Type == -1)
                                                  .Select(x => x.Sum)

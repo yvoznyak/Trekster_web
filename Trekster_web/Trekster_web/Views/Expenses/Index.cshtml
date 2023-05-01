@@ -4,16 +4,17 @@
     ViewData["Title"] = "Витрати";
 }
 
-<h1>Витрати</h1>
+<h2 style="margin-top: 3rem; margin-bottom: 1rem;"><center>Витрати</center></h2>
+
+<hr />
+
 @foreach (var item in Model.ExpencesByCategory)
 {
-    <tr>
-        <td>
-            @item
-        </td>
-    </tr>
-    <hr />
-    <br />
+    <div style="margin-bottom: 1rem !important; border: 2px solid #dc3545; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: #f8d7da; color: #721c24;">
+        @item
+    </div>
 }
 
-@Html.DisplayFor(model => model.Summary)
+<div style="margin-top: 2rem !important; border: 2px solid #17a2b8; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: #cce5ff; color: #004085;">
+    @Html.DisplayFor(model => model.Summary)
+</div>

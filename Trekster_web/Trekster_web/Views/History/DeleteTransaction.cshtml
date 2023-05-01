@@ -4,29 +4,16 @@
     ViewData["Title"] = "Видалення транзакції";
 }
 
-<h1>Delete</h1>
+<h2 style="margin-top: 3rem;"><center>Видалення транзакції</center></h2>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Transaction</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            Дата
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Date)
-        </dd>
-        <dt class="col-sm-2">
-            Сума
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Sum)
-        </dd>
-    </dl>
+<hr />
 
+<h3>Ви впевнені, що хочете видалити тразакцію @Html.DisplayFor(model => model.Date) на суму @Html.DisplayFor(model => model.Sum)?</h3>
+
+<div style="display: flex; margin-top: 1rem;">
     <form asp-action="DeleteTransaction">
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Видалити" class="btn btn-danger">
     </form>
+
+    <a asp-action="Index" style="margin-left: 1rem; margin-top: 0.25rem;">Назад до історії транзакцій</a>
 </div>

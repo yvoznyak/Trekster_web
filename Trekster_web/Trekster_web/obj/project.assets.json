@@ -10373,24 +10373,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\onisk\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Yura\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Trekster_web\\Trekster_web.csproj",
+      "projectUniqueName": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Trekster_web\\Trekster_web.csproj",
       "projectName": "Trekster_web",
-      "projectPath": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Trekster_web\\Trekster_web.csproj",
-      "packagesPath": "C:\\Users\\onisk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Trekster_web\\obj\\",
+      "projectPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Trekster_web\\Trekster_web.csproj",
+      "packagesPath": "C:\\Users\\Yura\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Trekster_web\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\onisk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Yura\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10398,18 +10393,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj": {
-              "projectPath": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj"
+            "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj"
             },
-            "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Services\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Services\\Infrastructure.csproj"
+            "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj"
             }
           }
         }
