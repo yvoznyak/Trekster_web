@@ -96,6 +96,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -118,6 +126,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/SuccessRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTdWNjZXNzUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/_ViewImports.cshtml]

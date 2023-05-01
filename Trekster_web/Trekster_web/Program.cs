@@ -10,6 +10,8 @@ using Infrastructure.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
+using Trekster_web.ControllerServices.Implementation;
+using Trekster_web.ControllerServices.Interfaces;
 using Trekster_web.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -38,6 +40,13 @@ builder.Services.AddAutoMapper(typeof(AccountVMProfile).Assembly);
 builder.Services.AddAutoMapper(typeof(AccountsVMProfile).Assembly);
 builder.Services.AddAutoMapper(typeof(TransactionVMProfile).Assembly);
 
+builder.Services.AddScoped<IAccountControllerService, AccountControllerService>();
+builder.Services.AddScoped<IExpensesControllerService, ExpensesControllerService>();
+builder.Services.AddScoped<IHistoryControllerService, HistoryControllerService>();
+builder.Services.AddScoped<IHomeControllerService, HomeControllerService>();
+builder.Services.AddScoped<IProfitsControllerService, ProfitsControllerService>();
+
+
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseNpgsql(
@@ -53,7 +62,9 @@ builder.Services.AddScoped<IEmailSender, EmailSender>();
 
 builder.Services.AddIdentity<User, IdentityRole>(options =>
 {
-    // Configure Identity options here
+    options.User.RequireUniqueEmail = true;
+
+    options.SignIn.RequireConfirmedEmail = true;
 })
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();

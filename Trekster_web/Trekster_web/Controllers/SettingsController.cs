@@ -14,15 +14,13 @@ namespace Trekster_web.Controllers
     [AuthorizeFilter]
     public class SettingsController : Controller
     {
-        private readonly UserManager<User> _userManager;
         private readonly IAccountService _account;
         private readonly ICategoryService _category;
         private readonly IMapper _mapper;
 
-        public SettingsController(IAccountService account, UserManager<User> userManager, ICategoryService category, IMapper mapper)
+        public SettingsController(IAccountService account, ICategoryService category, IMapper mapper)
         {
             _account = account;
-            _userManager = userManager;
             _category = category;
             _mapper = mapper;
         }

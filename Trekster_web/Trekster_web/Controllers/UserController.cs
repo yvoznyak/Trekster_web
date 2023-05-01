@@ -88,11 +88,11 @@ namespace Trekster_web.Controllers
             }
 
             var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            var confirmationLink = Url.Action(nameof(ConfirmEmail), "Account", new { token, email = user.Email }, Request.Scheme);
+            var confirmationLink = Url.Action(nameof(ConfirmEmail), "User", new { token, email = user.Email }, Request.Scheme);
             var message = new BusinessLogic.Models.Message(new string[] { user.Email }, "Confirmation email link", confirmationLink, null);
             await _emailSender.SendEmailAsync(message);
 
-            return RedirectToAction(nameof(HomeController.Index), "Home");
+            return RedirectToAction(nameof(SuccessRegister));
         }
 
         [HttpGet]
@@ -101,8 +101,21 @@ namespace Trekster_web.Controllers
             var user = await _userManager.FindByEmailAsync(email);
             if (user == null)
                 return View("Error");
+
             var result = await _userManager.ConfirmEmailAsync(user, token);
             return View(result.Succeeded ? nameof(ConfirmEmail) : "Error");
+        }
+
+        [HttpGet]
+        public IActionResult Error()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult SuccessRegister()
+        {
+            return View();
         }
 
         [HttpPost]
@@ -148,6 +161,7 @@ namespace Trekster_web.Controllers
         {
             if (!ModelState.IsValid)
                 return View(resetPasswordModel);
+
             var user = await _userManager.FindByEmailAsync(resetPasswordModel.Email);
             if (user == null)
                 RedirectToAction(nameof(ResetPasswordConfirmation));
@@ -158,8 +172,10 @@ namespace Trekster_web.Controllers
                 {
                     ModelState.TryAddModelError(error.Code, error.Description);
                 }
+
                 return View();
             }
+
             return RedirectToAction(nameof(ResetPasswordConfirmation));
         }
 
