@@ -4,15 +4,15 @@
     ViewData["Title"] = "Рахунки";
 }
 
-<h2 style="margin-top: 3rem;"><center>Рахунки</center></h2>
+<h2><center>Рахунки</center></h2>
 
 <hr />
         
-<a asp-action="Create" class="btn btn-primary" style="padding-right: 4rem; padding-left: 4rem; margin-top: 1rem; margin-bottom: 1rem;">Додати рахунок</a>
+<a asp-action="Create" class="btn btn-primary btn-wide my-4">Додати рахунок</a>
 
 @foreach (var item in Model.AccountsSummary)
 {
-    <div style="border: 2px solid #17a2b8; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: #cce5ff; color: #004085;">
+    <div class="info-container" style="border: 2px solid #17a2b8; background-color: #cce5ff; color: #004085;">
         @Html.DisplayFor(modelItem => item)
     </div>
 }

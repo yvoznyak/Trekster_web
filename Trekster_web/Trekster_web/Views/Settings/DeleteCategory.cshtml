@@ -3,13 +3,13 @@
     ViewData["Title"] = "Видалення категорії";
 }
 
-<h2 style="margin-top: 3rem;"><center>Видалення категорії</center></h2>
+<h2><center>Видалення категорії</center></h2>
 
 <hr />
 
 <h3>Ви впевнені, що хочете видалити категорію @Html.DisplayFor(model => model.Name)?</h3>
 
-<div style="display: flex; margin-top: 1rem;">
+<div class="d-flex" style="margin-top: 1rem;">
     <form asp-action="DeleteCategory">
         <input type="submit" value="Видалити" class="btn btn-danger">
     </form>

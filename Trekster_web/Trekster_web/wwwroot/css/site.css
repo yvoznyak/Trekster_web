@@ -20,3 +20,33 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.form-group{
+    margin-bottom: 1.25rem;
+}
+
+.form-control {
+    margin-top: 0.5rem;
+}
+
+.h2 {
+    margin-top: 3rem;
+}
+
+.btn-wide {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.info-container {
+    margin-bottom: 1.5rem !important;
+    padding: 0.5rem;
+    border-radius: 10px;
+    max-width: 60%;
+    border: 2px;
+}

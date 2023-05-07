@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj": {}
+    "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\onisk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\BusinessLogic\\obj\\",
+        "projectPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\BusinessLogic\\BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\Yura\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\onisk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Yura\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Services\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Services\\Infrastructure.csproj"
+              "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj"
               }
             }
           }
@@ -116,25 +111,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Services\\Infrastructure.csproj": {
+    "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Services\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Services\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\onisk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\onisk\\OneDrive\\Документы\\Trekster_web\\Trekster_web\\Services\\obj\\",
+        "projectPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Yura\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\onisk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Yura\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,7 +133,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -228,7 +218,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -9,137 +9,137 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Trekster_web
 build_property.RootNamespace = Trekster_web
-build_property.ProjectDir = C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web\
+build_property.ProjectDir = C:\Users\Yura\OneDrive\Документи\універ\Прога\Trekster_web\Trekster_web\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web
+build_property.MSBuildProjectDirectory = C:\Users\Yura\OneDrive\Документи\універ\Прога\Trekster_web\Trekster_web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Accounts/Create.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Accounts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Accounts/Index.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Accounts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Expenses/Index.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Expenses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZW5zZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/History/DeleteTransaction.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/History/DeleteTransaction.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yeVxEZWxldGVUcmFuc2FjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/History/EditTransaction.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/History/EditTransaction.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yeVxFZGl0VHJhbnNhY3Rpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/History/Index.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/History/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Home/CreateTransaction.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Home/CreateTransaction.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVUcmFuc2FjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Home/Index.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Profits/Index.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Profits/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZml0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/Accounts.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Settings/Accounts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQWNjb3VudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/Categories.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Settings/Categories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ2F0ZWdvcmllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/Create.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Settings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/DeleteAccount.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Settings/DeleteAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcRGVsZXRlQWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/DeleteCategory.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Settings/DeleteCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcRGVsZXRlQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/EditAccount.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Settings/EditAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcRWRpdEFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/EditCategory.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Settings/EditCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcRWRpdENhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/Index.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Settings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Shared/Error.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ConfirmEmail.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/User/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/Error.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/User/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ForgotPassword.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/User/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ForgotPasswordConfirmation.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/User/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/Login.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/Register.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ResetPassword.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/User/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ResetPasswordConfirmation.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/User/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/SuccessRegister.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/User/SuccessRegister.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTdWNjZXNzUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/_ViewImports.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/_ViewStart.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Shared/_Layout.cshtml]
+[C:/Users/Yura/OneDrive/Документи/універ/Прога/Trekster_web/Trekster_web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qh9fwlg8xo

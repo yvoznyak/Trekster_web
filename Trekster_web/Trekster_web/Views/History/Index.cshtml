@@ -4,19 +4,19 @@
     ViewData["Title"] = "Історія транзакцій";
 }
 
-<h2 style="margin-top: 3rem;"><center>Історія транзакцій</center></h2>
+<h2><center>Історія транзакцій</center></h2>
 
 <hr />
 
 @foreach (var item in Model.TransactionInfo)
 {
-    <div class="row" style="border: 2px solid #17a2b8; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: @item.Value.First().Value; color: #004085; align-items: center;">
-        <div class="col-md-7">
+    <div class="row" style="border: 2px solid #17a2b8; padding: 10px; margin: 1rem 0.5rem; border-radius: 10px; background-color: #cce5ff; color: #004085; align-items: center;">
+        <div class="col-md-7 col-sm-6 col-5" style="padding-right: 0.7rem;">
             @item.Value.First().Key
         </div>
-        <div class="col-md-5">
-            <a asp-action="EditTransaction" asp-route-id="@item.Key" class="btn btn-warning">Редагувати</a> |
-            <a asp-action="DeleteTransaction" asp-route-id="@item.Key" class="btn btn-danger">Видалити</a>
+        <div class="col-md-5 col-sm-6 col-7 centered">
+            <a asp-action="EditTransaction" asp-route-id="@item.Key" class="btn btn-warning" style="margin-right: 0.3rem;">Редагувати</a>
+            <a asp-action="DeleteTransaction" asp-route-id="@item.Key" class="btn btn-danger" style="margin-right: 0.5rem;">Видалити</a>
         </div>
     </div>
 }

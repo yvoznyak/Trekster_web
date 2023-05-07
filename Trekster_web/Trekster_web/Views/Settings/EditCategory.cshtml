@@ -4,19 +4,19 @@
     ViewData["Title"] = "Редагування категорії";
 }
 
-<h2 style="margin-top: 3rem;"><center>Редагування категорії</center></h2>
+<h2><center>Редагування категорії</center></h2>
 
 <hr />
 
 <center>
     <div class="row" style="justify-content: center;">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-7 col-8">
             <form asp-action="EditCategory">
                 <div asp-validation-summary="All" class="text-danger"></div>
                 <input type="hidden" asp-for="Id" />
-                <div class="form-group" style="margin-bottom: 1rem;">
+                <div class="form-group">
                     <label asp-for="Name" class="control-label">Назва</label>
-                    <input asp-for="Name" class="form-control" style="margin-top: 0.5rem;" />
+                    <input asp-for="Name" class="form-control"/>
                     <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
                 <div style="display: flex; flex-direction: column; margin-bottom: 1rem;">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <form asp-action="Save">
-                    <input type="submit" value="Зберегти" class="btn btn-primary" style="padding-right: 4rem; padding-left: 4rem;">
+                    <input type="submit" value="Зберегти" class="btn btn-primary btn-wide">
                 </form>
             </form>
         </div>

@@ -5,24 +5,26 @@
 }
 
 <center>
-    <div style="margin-bottom: 1.5rem !important; border: 2px solid #17a2b8; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: #cce5ff; color: #004085;">
-        @Html.DisplayFor(model => model.Summary)
-    </div>
+    <div style="margin-top: 3rem;">
+        <div class="info-container" style="border: 2px solid #17a2b8; background-color: #cce5ff; color: #004085;">
+            @Html.DisplayFor(model => model.Summary)
+        </div>
 
-    <div style="margin-bottom: 1rem !important; border: 2px solid #dc3545; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: #f8d7da; color: #721c24;">
-        Частка витрат: @Html.DisplayFor(model => model.ExpencesPercentage)%
-    </div>
+        <div class="info-container" style="border: 2px solid #dc3545; background-color: #f8d7da; color: #721c24; margin-top: 2rem !important;">
+            Частка витрат: @Html.DisplayFor(model => model.ExpencesPercentage)%
+        </div>
 
-    <div style="margin-bottom: 1.5rem !important; border: 2px solid #28a745; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: #d4edda; color: #155724;">
-        Частка залишку: @Html.DisplayFor(model => model.ProfitsPercentage)%
-    </div>
+        <div class="info-container"  style="border: 2px solid #28a745; background-color: #d4edda; color: #155724;">
+            Частка залишку: @Html.DisplayFor(model => model.ProfitsPercentage)%
+        </div>
 
-    @if (Model.ButtonExist)
-    {
-        <a asp-action="CreateTransaction" class="btn btn-primary" style="padding-right: 4rem; padding-left: 4rem;">Додати транзакцію</a>
-    }
-    else
-    {
-        <span>Щоб додати транзакцію, ви повинні додати рахунок.</span>
-    }
+        @if (Model.ButtonExist)
+        {
+            <a asp-action="CreateTransaction" class="btn btn-primary btn-wide mt-3">Додати транзакцію</a>
+        }
+        else
+        {
+            <span>Щоб додати транзакцію, ви повинні додати рахунок.</span>
+        }
+    </div>
 </center>

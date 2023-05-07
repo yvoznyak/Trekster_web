@@ -4,40 +4,24 @@
     ViewData["Title"] = "Налаштування категорій";
 }
 
-<h2 style="margin-top: 3rem;"><center>Налаштування категорій</center></h2>
+<h2><center>Налаштування категорій</center></h2>
 
 <hr />
 
 <a asp-action="Create" class="btn btn-info" style="margin-left: 3rem; margin-bottom: 2rem; margin-top: 1rem;">Додати категорію</a>
 
-<center>
-    <table class="table" style="width: 60%;">
-        <thead>
-            <tr>
-                <th>
-                    <span style="margin-left: 4.5rem;">Категорія</span>
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Categories)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </td>
-                    <td>
-                        <div style="display: flex; justify-content: center;">
-                            <a asp-action="EditCategory" asp-route-id="@item.Id" class="btn btn-warning" style="margin-right: 1rem;">Редагувати</a> |
-                            <a asp-action="DeleteCategory" asp-route-id="@item.Id" class="btn btn-danger" style="margin-left: 1rem;">Видалити</a>
-                        </div>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</center>
+@foreach (var item in Model.Categories)
+{
+    <div class="row" style="border: 2px solid #17a2b8; padding: 10px; margin: 1rem 0.5rem; border-radius: 10px; background-color: #cce5ff; color: #004085; align-items: center;">
+        <div class="col-md-7 col-sm-6 col-5" style="padding-right: 0.5rem;">
+            @Html.DisplayFor(modelItem => item.Name)
+        </div>
+        <div class="col-md-5 col-sm-6 col-7 centered">
+            <a asp-action="EditCategory" asp-route-id="@item.Id" class="btn btn-warning" style="margin-right: 0.3rem;">Редагувати</a>
+            <a asp-action="DeleteCategory" asp-route-id="@item.Id" class="btn btn-danger" style="margin-right: 0.5rem;">Видалити</a>
+        </div>
+    </div>
+}
 
 @section Scripts {
     @{
