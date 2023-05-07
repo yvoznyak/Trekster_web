@@ -1,4 +1,4 @@
-﻿using Infrastructure.Entities;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Trekster_web.Models
 {
@@ -8,6 +8,7 @@ namespace Trekster_web.Models
 
         public DateTime Date { get; set; } = DateTime.Now.ToUniversalTime();
 
+        [RegularExpression(@"^\d+(\.\d{1,2})?$", ErrorMessage = "Please enter a valid number")]
         public double Sum { get; set; } = 0;
 
         public int AccountId { get; set; } = 0;

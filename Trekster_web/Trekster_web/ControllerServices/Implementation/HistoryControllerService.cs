@@ -32,9 +32,9 @@ namespace Trekster_web.ControllerServices.Implementation
             _startBalance = startBalance;
         }
 
-        public Dictionary<int, string> GetTransactionInfo()
+        public Dictionary<int, Dictionary<string, string>> GetTransactionInfo()
         {
-            var dict = new Dictionary<int, string>();
+            var dict = new Dictionary<int, Dictionary<string, string>>();
             var lst = _transaction.GetAllForUser();
             lst.Reverse();
 
@@ -45,7 +45,20 @@ namespace Trekster_web.ControllerServices.Implementation
                            $" {_category.GetById(transaction.CategoryId).Name}," +
                            $" {_category.GetById(transaction.CategoryId).Type * transaction.Sum}" +
                            $" {_currency.GetById(transaction.CurrencyId).Name}";
-                dict.Add(transaction.Id, text);
+
+                var tmpDict = new Dictionary<string, string>();
+
+                if (_category.GetById(transaction.CategoryId).Type == 1)
+                {
+                    tmpDict.Add(text, "#d4edda");
+                }
+                else
+                {
+                    tmpDict.Add(text, "#f8d7da");
+                }
+
+
+                dict.Add(transaction.Id, tmpDict);
             }
 
             return dict;

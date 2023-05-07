@@ -5,7 +5,7 @@ namespace Trekster_web.ControllerServices.Interfaces
 {
     public interface IHistoryControllerService
     {
-        Dictionary<int, string> GetTransactionInfo();
+        Dictionary<int, Dictionary<string, string>> GetTransactionInfo();
 
         SelectList GetListOfAccounts();
 

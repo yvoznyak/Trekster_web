@@ -127,6 +127,11 @@ namespace Trekster_web.ControllerServices.Implementation
 
             var accounts = _account.GetAll();
 
+            if (!accounts.Any())
+            {
+                return 0;
+            }
+
             foreach (var account in accounts)
             {
                 var startBalances = _startBalance.GetAllForAccount(account);
@@ -143,6 +148,18 @@ namespace Trekster_web.ControllerServices.Implementation
                                                  .Sum();
 
             return Math.Round(100 * expenceTransactions / profitTransactions, 2);
+        }
+
+        public bool ButtonExist()
+        {
+            if (_account.GetAll().Any())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

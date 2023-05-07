@@ -10,12 +10,12 @@
 
 @foreach (var item in Model.TransactionInfo)
 {
-    <div class="row" style="border: 2px solid #17a2b8; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: #cce5ff; color: #004085; align-items: center;">
+    <div class="row" style="border: 2px solid #17a2b8; padding: 10px; margin-bottom: 10px; border-radius: 10px; max-width: 60%; background-color: @item.Value.First().Value; color: #004085; align-items: center;">
         <div class="col-md-7">
-            @item.Value
+            @item.Value.First().Key
         </div>
         <div class="col-md-5">
-            <a asp-action="EditTransaction" asp-route-id="@item.Key" class="btn btn-info">Редагувати</a> |
+            <a asp-action="EditTransaction" asp-route-id="@item.Key" class="btn btn-warning">Редагувати</a> |
             <a asp-action="DeleteTransaction" asp-route-id="@item.Key" class="btn btn-danger">Видалити</a>
         </div>
     </div>

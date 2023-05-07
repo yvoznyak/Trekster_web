@@ -33,6 +33,7 @@ namespace Trekster_web.Controllers
             homeVM.Summary = _home.GetSummary();
             homeVM.ExpencesPercentage = _home.GetExpencesPercentage();
             homeVM.ProfitsPercentage = 100 - homeVM.ExpencesPercentage;
+            homeVM.ButtonExist = _home.ButtonExist();
             return View(homeVM);
         }
 

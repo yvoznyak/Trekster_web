@@ -12,5 +12,7 @@ namespace Trekster_web.ControllerServices.Interfaces
         string GetSummary();
 
         double GetExpencesPercentage();
+
+        bool ButtonExist();
     }
 }

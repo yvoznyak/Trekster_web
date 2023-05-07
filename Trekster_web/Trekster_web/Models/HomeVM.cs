@@ -7,5 +7,7 @@
         public double? ExpencesPercentage { get; set; } = 0;
 
         public double? ProfitsPercentage { get; set; } = 0;
+
+        public bool ButtonExist { get; set; } = false;
     }
 }

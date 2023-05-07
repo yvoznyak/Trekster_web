@@ -17,5 +17,12 @@
         Частка залишку: @Html.DisplayFor(model => model.ProfitsPercentage)%
     </div>
 
-    <a asp-action="CreateTransaction" class="btn btn-primary" style="padding-right: 4rem; padding-left: 4rem;">Додати транзакцію</a>
+    @if (Model.ButtonExist)
+    {
+        <a asp-action="CreateTransaction" class="btn btn-primary" style="padding-right: 4rem; padding-left: 4rem;">Додати транзакцію</a>
+    }
+    else
+    {
+        <span>Щоб додати транзакцію, ви повинні додати рахунок.</span>
+    }
 </center>

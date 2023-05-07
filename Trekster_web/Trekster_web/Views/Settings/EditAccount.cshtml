@@ -1,34 +1,36 @@
 ﻿@model AccountVM
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Редагувати рахунок";
 }
 
-<h1>Edit</h1>
+<h2 style="margin-top: 3rem;"><center>Редагувати рахунок</center></h2>
 
-<h4>Account</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="EditAccount">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
 
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+<center>
+    <div class="row" style="justify-content: center; margin-bottom: 1rem;">
+        <div class="col-md-4">
+            <form asp-action="EditAccount">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label asp-for="Name" class="control-label">Назва</label>
+                    <input asp-for="Name" class="form-control" style="margin-bottom: 0.5rem;" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Зберегти" class="btn btn-primary" style="padding-right: 4rem; padding-left: 4rem;" />
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div style="margin-top: 1rem;">
+        <a asp-action="Accounts">Назад до налаштувань рахунків</a>
+    </div>
+</center> 
 
 @section Scripts {
     @{

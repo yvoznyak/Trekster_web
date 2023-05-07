@@ -6,6 +6,6 @@ namespace Trekster_web.Models
     {
         public IEnumerable<TransactionModel> Transactions { get; set; } = new List<TransactionModel>();
 
-        public Dictionary<int, string> TransactionInfo { get; set; } = new Dictionary<int, string>();
+        public Dictionary<int, Dictionary<string, string>> TransactionInfo { get; set; } = new Dictionary<int, Dictionary<string, string>>();
     }
 }
