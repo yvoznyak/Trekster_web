@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj": {}
+    "/Users/user/treksterWeb/Trekster_web/Services/Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj": {
+    "/Users/user/treksterWeb/Trekster_web/Services/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj",
+        "projectUniqueName": "/Users/user/treksterWeb/Trekster_web/Services/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Yura\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yura\\OneDrive\\Документи\\універ\\Прога\\Trekster_web\\Services\\obj\\",
+        "projectPath": "/Users/user/treksterWeb/Trekster_web/Services/Infrastructure.csproj",
+        "packagesPath": "/Users/user/.nuget/packages/",
+        "outputPath": "/Users/user/treksterWeb/Trekster_web/Services/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yura\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/user/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -84,11 +83,19 @@
               "target": "Package",
               "version": "[7.0.3, )"
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[1.1.118, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.15, )"
             }
           },
           "imports": [
@@ -107,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }

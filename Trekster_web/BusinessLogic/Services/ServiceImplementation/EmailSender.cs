@@ -1,6 +1,8 @@
 ﻿using BusinessLogic.Models;
+using BusinessLogic.Services.ServiceImplementation;
 using BusinessLogic.Services.ServiceInterfaces;
 using MailKit.Net.Smtp;
+using Microsoft.Extensions.Logging;
 using MimeKit;
 using System;
 using System.IO;
@@ -12,16 +14,21 @@ namespace EmailService
     public class EmailSender : IEmailSender
     {
         private readonly EmailConfiguration _emailConfig;
+        private readonly ILogger<EmailSender> _logger;
 
-        public EmailSender(EmailConfiguration emailConfig)
+        public EmailSender(
+            EmailConfiguration emailConfig,
+            ILogger<EmailSender> logger
+        )
         {
             _emailConfig = emailConfig;
+            _logger = logger;
         }
 
         public void SendEmail(Message message)
         {
             var emailMessage = CreateEmailMessage(message);
-
+            _logger.LogInformation($"SendEmail to= {message.To}");
             Send(emailMessage);
         }
 
@@ -32,7 +39,7 @@ namespace EmailService
             await SendAsync(mailMessage);
         }
 
-        private MimeMessage CreateEmailMessage(Message message)
+        public MimeMessage CreateEmailMessage(Message message)
         {
             var emailMessage = new MimeMessage();
             emailMessage.From.Add(new MailboxAddress("", _emailConfig.From));
@@ -69,7 +76,7 @@ namespace EmailService
                     client.Connect(_emailConfig.SmtpServer, _emailConfig.Port, true);
                     client.AuthenticationMechanisms.Remove("XOAUTH2");
                     client.Authenticate(_emailConfig.UserName, _emailConfig.Password);
-
+                    _logger.LogInformation($"SendEmail body= {mailMessage.TextBody}");
                     client.Send(mailMessage);
                 }
                 catch

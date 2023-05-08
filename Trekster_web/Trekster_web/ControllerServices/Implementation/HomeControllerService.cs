@@ -5,12 +5,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Trekster_web.Controllers;
 using Trekster_web.ControllerServices.Interfaces;
 using Trekster_web.Models;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Trekster_web.ControllerServices.Implementation
 {
     public class HomeControllerService : IHomeControllerService
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HomeControllerService> _logger;
         private readonly ITransactionService _transaction;
         private readonly IAccountService _account;
         private readonly ICurrencyService _currency;
@@ -18,13 +19,15 @@ namespace Trekster_web.ControllerServices.Implementation
         private readonly IStartBalanceService _startBalance;
         private readonly IMapper _mapper;
 
-        public HomeControllerService(ILogger<HomeController> logger,
-                                     ITransactionService transaction,
-                                     IMapper mapper,
-                                     IAccountService accountService,
-                                     ICurrencyService currency,
-                                     ICategoryService category,
-                                     IStartBalanceService startBalance)
+        public HomeControllerService(
+            ILogger<HomeControllerService> logger,
+            ITransactionService transaction,
+            IMapper mapper,
+            IAccountService accountService,
+            ICurrencyService currency,
+            ICategoryService category,
+            IStartBalanceService startBalance
+        )
         {
             _logger = logger;
             _transaction = transaction;
@@ -39,7 +42,7 @@ namespace Trekster_web.ControllerServices.Implementation
         {
             var accounts = _account.GetAll();
             var dict = new Dictionary<string, string>();
-
+            _logger.LogInformation($"Get List Of Accounts");
             foreach (var account in accounts)
             {
                 var startBalances = _startBalance.GetAllForAccount(account);
@@ -68,7 +71,7 @@ namespace Trekster_web.ControllerServices.Implementation
             var array = transactionVM.AccountsAndCurency.Split(' ');
             transactionVM.AccountId = Convert.ToInt32(array[1]);
             transactionVM.CurrencyId = Convert.ToInt32(array[0]);
-
+            _logger.LogInformation($"Save transaction with id={transactionVM.Id}");
             _transaction.Save(_mapper.Map<TransactionModel>(transactionVM));
         }
 
@@ -113,7 +116,7 @@ namespace Trekster_web.ControllerServices.Implementation
             }
 
             res = res.Remove(res.Length - 2);
-
+            _logger.LogInformation($"Summary={res}");
             return res;
         }
 
@@ -146,7 +149,7 @@ namespace Trekster_web.ControllerServices.Implementation
                                                  .GetById(x.CategoryId).Type == -1)
                                                  .Select(x => x.Sum)
                                                  .Sum();
-
+            _logger.LogInformation($"Percentage of expences={Math.Round(100 * expenceTransactions / profitTransactions, 2)}");
             return Math.Round(100 * expenceTransactions / profitTransactions, 2);
         }
 
@@ -154,12 +157,15 @@ namespace Trekster_web.ControllerServices.Implementation
         {
             if (_account.GetAll().Any())
             {
+                _logger.LogInformation($"Button exists");
                 return true;
             }
             else
             {
+                _logger.LogInformation($"Button do not exists");
                 return false;
             }
+
         }
     }
 }
