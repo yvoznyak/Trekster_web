@@ -9,137 +9,137 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Trekster_web
 build_property.RootNamespace = Trekster_web
-build_property.ProjectDir = /Users/user/treksterWeb/Trekster_web/Trekster_web/
+build_property.ProjectDir = C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/user/treksterWeb/Trekster_web/Trekster_web
+build_property.MSBuildProjectDirectory = C:\Users\onisk\OneDrive\Документы\Trekster_web\Trekster_web\Trekster_web
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Accounts/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudHMvQ3JlYXRlLmNzaHRtbA==
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Accounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Accounts/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudHMvSW5kZXguY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Accounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Expenses/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZW5zZXMvSW5kZXguY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Expenses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZW5zZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/History/DeleteTransaction.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGlzdG9yeS9EZWxldGVUcmFuc2FjdGlvbi5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/History/DeleteTransaction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yeVxEZWxldGVUcmFuc2FjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/History/EditTransaction.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGlzdG9yeS9FZGl0VHJhbnNhY3Rpb24uY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/History/EditTransaction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yeVxFZGl0VHJhbnNhY3Rpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/History/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGlzdG9yeS9JbmRleC5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/History/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Home/CreateTransaction.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DcmVhdGVUcmFuc2FjdGlvbi5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Home/CreateTransaction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVUcmFuc2FjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Profits/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZml0cy9JbmRleC5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Profits/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZml0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Settings/Accounts.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ3MvQWNjb3VudHMuY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/Accounts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQWNjb3VudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Settings/Categories.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ3MvQ2F0ZWdvcmllcy5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/Categories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ2F0ZWdvcmllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Settings/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ3MvQ3JlYXRlLmNzaHRtbA==
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Settings/DeleteAccount.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ3MvRGVsZXRlQWNjb3VudC5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/DeleteAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcRGVsZXRlQWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Settings/DeleteCategory.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ3MvRGVsZXRlQ2F0ZWdvcnkuY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/DeleteCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcRGVsZXRlQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Settings/EditAccount.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ3MvRWRpdEFjY291bnQuY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/EditAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcRWRpdEFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Settings/EditCategory.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ3MvRWRpdENhdGVnb3J5LmNzaHRtbA==
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcRWRpdENhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Settings/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ3MvSW5kZXguY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Settings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/User/ConfirmEmail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Db25maXJtRW1haWwuY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/User/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9FcnJvci5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/User/ForgotPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Gb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/User/ForgotPasswordConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Gb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/User/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Mb2dpbi5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/User/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9SZWdpc3Rlci5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/User/ResetPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9SZXNldFBhc3N3b3JkLmNzaHRtbA==
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/User/ResetPasswordConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9SZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/User/SuccessRegister.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9TdWNjZXNzUmVnaXN0ZXIuY3NodG1s
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/User/SuccessRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTdWNjZXNzUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/user/treksterWeb/Trekster_web/Trekster_web/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-v4msek5zox
+[C:/Users/onisk/OneDrive/Документы/Trekster_web/Trekster_web/Trekster_web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qh9fwlg8xo

@@ -9,6 +9,7 @@ using Infrastructure;
 using Infrastructure.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using System.Configuration;
 using Trekster_web.ControllerServices.Implementation;
 using Trekster_web.ControllerServices.Interfaces;
@@ -46,6 +47,11 @@ builder.Services.AddScoped<IHistoryControllerService, HistoryControllerService>(
 builder.Services.AddScoped<IHomeControllerService, HomeControllerService>();
 builder.Services.AddScoped<IProfitsControllerService, ProfitsControllerService>();
 
+var logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {

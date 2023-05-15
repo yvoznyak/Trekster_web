@@ -1,0 +1,163 @@
+[2023-05-15 21:03:50.549 +03:00  INF]  Get all models
+[2023-05-15 21:03:51.947 +03:00  INF]  Get All For User
+[2023-05-15 21:03:52.155 +03:00  INF]  Get all Accounts
+[2023-05-15 21:03:52.275 +03:00  INF]  Get All For Account
+[2023-05-15 21:03:52.339 +03:00  INF]  Get All For Account
+[2023-05-15 21:03:52.344 +03:00  INF]  Get All For Account
+[2023-05-15 21:03:52.359 +03:00  INF]  Get category with id=1.
+[2023-05-15 21:03:52.363 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:03:52.376 +03:00  INF]  Final sum = 200 for transactions with id=8
+[2023-05-15 21:03:52.378 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:03:52.381 +03:00  INF]  Final sum = 600 for transactions with id=10
+[2023-05-15 21:03:52.382 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:03:52.384 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:03:52.387 +03:00  INF]  Final sum = 60000 for transactions with id=13
+[2023-05-15 21:03:52.388 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:03:52.391 +03:00  INF]  Final sum = 10000 for transactions with id=9
+[2023-05-15 21:03:52.392 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:03:52.393 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:03:52.395 +03:00  INF]  Final sum = 45 for transactions with id=14
+[2023-05-15 21:03:52.397 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:03:52.404 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:03:52.407 +03:00  INF]  Get currency with id= 2
+[2023-05-15 21:03:52.409 +03:00  INF]  Summary=Підсумок: 70600 Uah, 245 Usd
+[2023-05-15 21:03:52.411 +03:00  INF]  Get All For User
+[2023-05-15 21:03:52.412 +03:00  INF]  Get all Accounts
+[2023-05-15 21:03:52.414 +03:00  INF]  Get All For Account
+[2023-05-15 21:03:52.416 +03:00  INF]  Get All For Account
+[2023-05-15 21:03:52.418 +03:00  INF]  Get All For Account
+[2023-05-15 21:03:52.421 +03:00  INF]  Get all models
+[2023-05-15 21:03:52.423 +03:00  INF]  Get category with id=1.
+[2023-05-15 21:03:52.425 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:03:52.426 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:03:52.428 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:03:52.429 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:03:52.431 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:03:52.432 +03:00  INF]  Get category with id=1.
+[2023-05-15 21:03:52.434 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:03:52.436 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:03:52.437 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:03:52.439 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:03:52.441 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:03:52.443 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:03:52.445 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:03:52.447 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:03:52.449 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:03:52.450 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:03:52.452 +03:00  INF]  Get currency with id= 2
+[2023-05-15 21:03:52.453 +03:00  INF]  Profit=Робота: 10000 Uah, 200 Usd, with category
+[2023-05-15 21:03:52.455 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:03:52.456 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:03:52.458 +03:00  INF]  Get currency with id= 2
+[2023-05-15 21:03:52.459 +03:00  INF]  Profit=Додеп: 60600 Uah, 45 Usd, with category
+[2023-05-15 21:05:23.261 +03:00  INF]  Get all models
+[2023-05-15 21:05:23.276 +03:00  INF]  Get All For User
+[2023-05-15 21:05:23.279 +03:00  INF]  Get all Accounts
+[2023-05-15 21:05:23.282 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.285 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.288 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.290 +03:00  INF]  Get category with id=1.
+[2023-05-15 21:05:23.292 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.293 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.295 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.296 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.298 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.300 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.301 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.305 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.306 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:05:23.308 +03:00  INF]  Get currency with id= 2
+[2023-05-15 21:05:23.309 +03:00  INF]  Summary=Підсумок: 700 Uah, 410 Usd
+[2023-05-15 21:05:23.311 +03:00  INF]  Get All For User
+[2023-05-15 21:05:23.312 +03:00  INF]  Get all Accounts
+[2023-05-15 21:05:23.313 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.316 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.318 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.321 +03:00  INF]  Get all models
+[2023-05-15 21:05:23.323 +03:00  INF]  Get category with id=1.
+[2023-05-15 21:05:23.325 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.326 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.328 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.330 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.331 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.334 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.336 +03:00  INF]  Get category with id=1.
+[2023-05-15 21:05:23.338 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.340 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.342 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.343 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.345 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.347 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.348 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.350 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.352 +03:00  INF]  Get category with id=1.
+[2023-05-15 21:05:23.354 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:05:23.355 +03:00  INF]  Expenses=Зал: 100 Uah for category
+[2023-05-15 21:05:23.356 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.358 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:05:23.360 +03:00  INF]  Get currency with id= 2
+[2023-05-15 21:05:23.361 +03:00  INF]  Expenses=Продукти: 600 Uah, 410 Usd for category
+[2023-05-15 21:05:23.669 +03:00  INF]  Get All For User
+[2023-05-15 21:05:23.729 +03:00  INF]  Get all Accounts
+[2023-05-15 21:05:23.731 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.734 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.736 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.739 +03:00  INF]  Get All For User
+[2023-05-15 21:05:23.740 +03:00  INF]  Get all Accounts
+[2023-05-15 21:05:23.741 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.744 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.746 +03:00  INF]  Get All For Account
+[2023-05-15 21:05:23.764 +03:00  INF]  Get account with id=8.
+[2023-05-15 21:05:23.766 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.768 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.770 +03:00  INF]  Get currency with id= 2
+[2023-05-15 21:05:23.771 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.772 +03:00  INF]  Get transactionInfo=09.19.2023, Рахунок, Продукти, -400 Usd
+[2023-05-15 21:05:23.774 +03:00  INF]  Get account with id=8.
+[2023-05-15 21:05:23.775 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.777 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.778 +03:00  INF]  Get currency with id= 2
+[2023-05-15 21:05:23.780 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.780 +03:00  INF]  Get transactionInfo=01.20.2023, Рахунок, Додеп, 45 Usd
+[2023-05-15 21:05:23.782 +03:00  INF]  Get account with id=4.
+[2023-05-15 21:05:23.784 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.785 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.787 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:05:23.788 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.789 +03:00  INF]  Get transactionInfo=24.26.2023, Privat24, Продукти, -600 Uah
+[2023-05-15 21:05:23.791 +03:00  INF]  Get account with id=4.
+[2023-05-15 21:05:23.793 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.794 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.796 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:05:23.798 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.799 +03:00  INF]  Get transactionInfo=24.50.2023, Privat24, Робота, 10000 Uah
+[2023-05-15 21:05:23.801 +03:00  INF]  Get account with id=3.
+[2023-05-15 21:05:23.803 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.805 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.806 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:05:23.808 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.809 +03:00  INF]  Get transactionInfo=25.22.2023, Гаманець, Додеп, 60000 Uah
+[2023-05-15 21:05:23.812 +03:00  INF]  Get account with id=3.
+[2023-05-15 21:05:23.813 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.815 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.816 +03:00  INF]  Get currency with id= 2
+[2023-05-15 21:05:23.819 +03:00  INF]  Get category with id=7.
+[2023-05-15 21:05:23.820 +03:00  INF]  Get transactionInfo=24.26.2023, Гаманець, Продукти, -10 Usd
+[2023-05-15 21:05:23.822 +03:00  INF]  Get account with id=3.
+[2023-05-15 21:05:23.824 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.835 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.837 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:05:23.849 +03:00  INF]  Get category with id=6.
+[2023-05-15 21:05:23.850 +03:00  INF]  Get transactionInfo=24.18.2023, Гаманець, Додеп, 600 Uah
+[2023-05-15 21:05:23.853 +03:00  INF]  Get account with id=3.
+[2023-05-15 21:05:23.856 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.857 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.862 +03:00  INF]  Get currency with id= 2
+[2023-05-15 21:05:23.863 +03:00  INF]  Get category with id=3.
+[2023-05-15 21:05:23.865 +03:00  INF]  Get transactionInfo=24.50.2023, Гаманець, Робота, 200 Usd
+[2023-05-15 21:05:23.868 +03:00  INF]  Get account with id=3.
+[2023-05-15 21:05:23.870 +03:00  INF]  Get category with id=1.
+[2023-05-15 21:05:23.872 +03:00  INF]  Get category with id=1.
+[2023-05-15 21:05:23.875 +03:00  INF]  Get currency with id= 1
+[2023-05-15 21:05:23.877 +03:00  INF]  Get category with id=1.
+[2023-05-15 21:05:23.878 +03:00  INF]  Get transactionInfo=24.50.2023, Гаманець, Зал, -100 Uah
