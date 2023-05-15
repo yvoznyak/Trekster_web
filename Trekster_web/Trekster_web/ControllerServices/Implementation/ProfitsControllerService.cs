@@ -8,14 +8,19 @@ namespace Trekster_web.ControllerServices.Implementation
         private readonly ICurrencyService _currencies;
         private readonly ITransactionService _transaction;
         private readonly ICategoryService _category;
+        private readonly ILogger<ProfitsControllerService> _logger;
 
-        public ProfitsControllerService(ICurrencyService currencyService,
-                                        ITransactionService transaction,
-                                        ICategoryService category)
+        public ProfitsControllerService(
+            ICurrencyService currencyService,
+            ITransactionService transaction,
+            ICategoryService category,
+            ILogger<ProfitsControllerService> logger
+        )
         {
             _currencies = currencyService;
             _transaction = transaction;
             _category = category;
+            _logger = logger;
         }
 
         public string GetSummary()
@@ -47,7 +52,7 @@ namespace Trekster_web.ControllerServices.Implementation
             }
 
             res = res.Remove(res.Length - 2);
-
+            _logger.LogInformation($"Summary={res}");
             return res;
         }
 
@@ -94,7 +99,7 @@ namespace Trekster_web.ControllerServices.Implementation
                 }
 
                 res = res.Remove(res.Length - 2);
-
+                _logger.LogInformation($"Profit={res}, with category");
                 list.Add(res);
             }
 

@@ -3,8 +3,10 @@ using BusinessLogic.Models;
 using BusinessLogic.Services.ServiceInterfaces;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Linq;
+using System.Xml.Linq;
 using Trekster_web.ControllerServices.Interfaces;
 using Trekster_web.Models;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Trekster_web.ControllerServices.Implementation
 {
@@ -16,13 +18,17 @@ namespace Trekster_web.ControllerServices.Implementation
         private readonly ICurrencyService _currency;
         private readonly IStartBalanceService _startBalance;
         private readonly IMapper _mapper;
+        private readonly ILogger<HistoryControllerService> _logger;
 
-        public HistoryControllerService(ITransactionService transaction,
-                                 IAccountService account,
-                                 ICategoryService category,
-                                 ICurrencyService currency,
-                                 IStartBalanceService startBalance,
-                                 IMapper mapper)
+        public HistoryControllerService(
+            ITransactionService transaction,
+            IAccountService account,
+            ICategoryService category,
+            ICurrencyService currency,
+            IStartBalanceService startBalance,
+            IMapper mapper,
+            ILogger<HistoryControllerService> logger
+        )
         {
             _transaction = transaction;
             _account = account;
@@ -30,6 +36,7 @@ namespace Trekster_web.ControllerServices.Implementation
             _currency = currency;
             _mapper = mapper;
             _startBalance = startBalance;
+            _logger = logger;
         }
 
         public Dictionary<int, Dictionary<string, string>> GetTransactionInfo()
@@ -57,7 +64,7 @@ namespace Trekster_web.ControllerServices.Implementation
                     tmpDict.Add(text, "#f8d7da");
                 }
 
-
+                _logger.LogInformation($"Get transactionInfo={text}");
                 dict.Add(transaction.Id, tmpDict);
             }
 
@@ -78,6 +85,7 @@ namespace Trekster_web.ControllerServices.Implementation
                     var text1 = $"{account.Name}, {_currency.GetById(startBalance.CurrencyId).Name}";
                     var text2 = $"{startBalance.CurrencyId} {startBalance.AccountId}";
                     dict.Add(text1, text2);
+                    _logger.LogInformation($"Get list of Accounts={text1}, {text2}");
                 }
             }
 
@@ -97,7 +105,7 @@ namespace Trekster_web.ControllerServices.Implementation
             var array = transactionVM.AccountsAndCurency.Split(' ');
             transactionVM.AccountId = Convert.ToInt32(array[1]);
             transactionVM.CurrencyId = Convert.ToInt32(array[0]);
-
+            _logger.LogInformation($"Save transaction with id={transactionVM.Id}");
             _transaction.Save(_mapper.Map<TransactionModel>(transactionVM));
         }
     }

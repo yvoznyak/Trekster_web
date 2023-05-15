@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
 using BusinessLogic.Models;
+using BusinessLogic.Services.ServiceImplementation;
 using BusinessLogic.Services.ServiceInterfaces;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Trekster_web.ControllerServices.Interfaces;
 using Trekster_web.Models;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Trekster_web.ControllerServices.Implementation
 {
@@ -13,18 +16,23 @@ namespace Trekster_web.ControllerServices.Implementation
         private readonly IStartBalanceService _startBalances;
         private readonly ITransactionService _transaction;
         private readonly IMapper _mapper;
+        private readonly ILogger<AccountControllerService> _logger;
 
-        public AccountControllerService(ICurrencyService currencies,
-                                  IAccountService account,
-                                  IStartBalanceService startBalances,
-                                  ITransactionService transaction,
-                                  IMapper mapper)
+        public AccountControllerService(
+            ICurrencyService currencies,
+            IAccountService account,
+            IStartBalanceService startBalances,
+            ITransactionService transaction,
+            IMapper mapper,
+            ILogger<AccountControllerService> logger
+        )
         {
             _currencies = currencies;
             _account = account;
             _startBalances = startBalances;
             _transaction = transaction;
             _mapper = mapper;
+            _logger = logger;
         }
 
         public List<string> GetAccountsInfo()
@@ -56,7 +64,7 @@ namespace Trekster_web.ControllerServices.Implementation
                 {
                     text += $"{tmpDict[key]} {key} ";
                 }
-
+                _logger.LogInformation($"Get account info={text}");
                 result.Add(text);
             }
 
@@ -74,7 +82,7 @@ namespace Trekster_web.ControllerServices.Implementation
                     break;
                 }
             }
-
+            _logger.LogInformation($"Start balance is not empty={create}");
             return create;
         }
 
@@ -95,7 +103,7 @@ namespace Trekster_web.ControllerServices.Implementation
                         AccountId = _account.GetLast().Id,
                         CurrencyId = _currencies.GetByName(tmp.Key).Id,
                     };
-
+                    _logger.LogInformation($"Save start balance with name={accountsVM.Name}");
                     _startBalances.Save(startBalanceModel);
                 }
             }
